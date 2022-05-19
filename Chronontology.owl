@@ -81,7 +81,7 @@
     <owl:ObjectProperty rdf:about="http://www.unict.disum.it/chronontology#IsSubPeriodizationOf">
         <rdfs:subPropertyOf rdf:resource="http://www.unict.disum.it/chronontology#isPeriodizationOf"/>
         <owl:inverseOf rdf:resource="http://www.unict.disum.it/chronontology#isSubPeriodizedIn"/>
-        <rdfs:domain rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
+        <rdfs:domain rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
         <rdfs:range rdf:resource="http://www.unict.disum.it/chronontology#Area"/>
         <rdfs:comment xml:lang="it">Sottoproprietà che dà conto delle sottoperiodizzazioni in cui sono suddivise le  varie aree.</rdfs:comment>
         <rdfs:label xml:lang="en">is sub periodization of</rdfs:label>
@@ -92,8 +92,8 @@
     <!-- http://www.unict.disum.it/chronontology#climateEventVerifiedIn -->
 
     <owl:ObjectProperty rdf:about="http://www.unict.disum.it/chronontology#climateEventVerifiedIn">
-        <rdfs:domain rdf:resource="http://www.unict.disum.it/chronontology#Climate_Changes"/>
-        <rdfs:range rdf:resource="http://www.unict.disum.it/chronontology#Absolute_Chronology"/>
+        <rdfs:domain rdf:resource="http://www.unict.disum.it/chronontology#ClimateChanges"/>
+        <rdfs:range rdf:resource="http://www.unict.disum.it/chronontology#AbsoluteChronology"/>
         <rdfs:comment xml:lang="it">Individua gli eventi climatici (desertificazioni, glaciazioni, ecc.)  verificatisi nell&apos;età cronologica.</rdfs:comment>
         <rdfs:label xml:lang="en">climate event verified in</rdfs:label>
     </owl:ObjectProperty>
@@ -104,7 +104,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.unict.disum.it/chronontology#dateObtainedBy">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://www.unict.disum.it/chronontology#Dating_Methods"/>
+        <rdfs:domain rdf:resource="http://www.unict.disum.it/chronontology#DatingMethods"/>
         <rdfs:comment xml:lang="it">Proprietà simmetrica che serve a specificare la metodologia con cui è stata ottenuta la datazione.</rdfs:comment>
         <rdfs:label xml:lang="en">date obtained by</rdfs:label>
     </owl:ObjectProperty>
@@ -135,8 +135,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.unict.disum.it/chronontology#isArcheologicalEvidenceOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://www.unict.disum.it/chronontology#Archeological_Evidence"/>
-        <rdfs:range rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
+        <rdfs:domain rdf:resource="http://www.unict.disum.it/chronontology#ArcheologicalEvidence"/>
+        <rdfs:range rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
         <rdfs:comment xml:lang="it">Proprietà simmetrica che serve a collegare le evidenze archeologiche con la specifica periodizzazione relativa dell&apos;area.</rdfs:comment>
         <rdfs:label xml:lang="en">is archeological evidence of</rdfs:label>
     </owl:ObjectProperty>
@@ -146,8 +146,8 @@
     <!-- http://www.unict.disum.it/chronontology#isClimateChangeOf -->
 
     <owl:ObjectProperty rdf:about="http://www.unict.disum.it/chronontology#isClimateChangeOf">
-        <rdfs:domain rdf:resource="http://www.unict.disum.it/chronontology#Climate_Changes"/>
-        <rdfs:range rdf:resource="http://www.unict.disum.it/chronontology#Absolute_Chronology"/>
+        <rdfs:domain rdf:resource="http://www.unict.disum.it/chronontology#ClimateChanges"/>
+        <rdfs:range rdf:resource="http://www.unict.disum.it/chronontology#AbsoluteChronology"/>
         <rdfs:comment xml:lang="it">Proprietà che collega le fluttuazioni climatiche alla periodizzazione assoluta.</rdfs:comment>
         <rdfs:label xml:lang="en">is climate change of</rdfs:label>
     </owl:ObjectProperty>
@@ -180,7 +180,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.unict.disum.it/chronontology#isPeriodizationOf">
         <owl:inverseOf rdf:resource="http://www.unict.disum.it/chronontology#isPeriodizedIn"/>
-        <rdfs:domain rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
+        <rdfs:domain rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
         <rdfs:range rdf:resource="http://www.unict.disum.it/chronontology#Area"/>
         <rdfs:comment xml:lang="it">Proprietà che suddivide la periodizzazione relativa a seconda delle singole periodizzazioni delle varie aree.</rdfs:comment>
         <rdfs:label xml:lang="en">is periodization of</rdfs:label>
@@ -202,7 +202,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.unict.disum.it/chronontology#isPopulatedBy">
         <owl:inverseOf rdf:resource="http://www.unict.disum.it/chronontology#populate"/>
-        <rdfs:domain rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
+        <rdfs:domain rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
         <rdfs:range rdf:resource="http://www.disum.unict.it/chronontology#Population"/>
         <rdfs:comment xml:lang="it">Proprietà che collega le periodizzazioni delle aree alle popolazioni che le hanno abitate.</rdfs:comment>
         <rdfs:label xml:lang="en">is populated by</rdfs:label>
@@ -214,7 +214,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.unict.disum.it/chronontology#isRelativeChronologyOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
+        <rdfs:domain rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
         <rdfs:comment xml:lang="it">Proprietà transitiva che collega le periodizzazioni assolute con l&apos;età relativa. Ha una proprietà inversa che collega le periodizzazioni relative con quelle assolute.</rdfs:comment>
         <rdfs:label xml:lang="en">is relative chronology of</rdfs:label>
     </owl:ObjectProperty>
@@ -274,7 +274,7 @@
     <!-- http://www.unict.disum.it/chronontology#redatedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.unict.disum.it/chronontology#redatedBy">
-        <rdfs:domain rdf:resource="http://www.unict.disum.it/chronontology#Archeological_Evidence"/>
+        <rdfs:domain rdf:resource="http://www.unict.disum.it/chronontology#ArcheologicalEvidence"/>
         <rdfs:range rdf:resource="http://www.unict.disum.it/chronontology#Archeologist"/>
         <rdfs:comment xml:lang="it">Proprietà che serve a collegare le evidenze archeologiche agli archeologi e alle archeologhe che le hanno portate alla luce.</rdfs:comment>
         <rdfs:label xml:lang="en">is redated by</rdfs:label>
@@ -464,9 +464,9 @@
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Absolute_Chronology -->
+    <!-- http://www.unict.disum.it/chronontology#AbsoluteChronology -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Absolute_Chronology">
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#AbsoluteChronology">
         <rdfs:comment xml:lang="it">Questa classe comprende la periodizzazione in termini di cronologia assoluta, indipendentemente dall&apos;area geografica.  
 Risulta suddivisa in tre sottoclassi, che comprendono le diverse unità geocronologiche utilizzate in geologia, gli eventi climatici e le fluttuazioni climatiche.</rdfs:comment>
         <rdfs:label xml:lang="en">Absolute chronology</rdfs:label>
@@ -477,7 +477,7 @@ Risulta suddivisa in tre sottoclassi, che comprendono le diverse unità geocrono
     <!-- http://www.unict.disum.it/chronontology#Aegean -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Aegean">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#West_Asia"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#WestAsia"/>
     </owl:Class>
     
 
@@ -493,15 +493,19 @@ Risulta suddivisa in tre sottoclassi, che comprendono le diverse unità geocrono
     <!-- http://www.unict.disum.it/chronontology#Anatolia -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Anatolia">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#West_Asia"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#WestAsia"/>
     </owl:Class>
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Ancient_dryas -->
+    <!-- http://www.unict.disum.it/chronontology#AncientDryas -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Ancient_dryas">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Climate_Changes_Pleistocene"/>
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#AncientDryas">
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#ClimateChangesPleistocene"/>
+        <rdfs:comment xml:lang="it">l Dryas antichissimo fu un periodo climatico, accaduto durante lo stadiale più freddo, dopo la glaciazione Weichselian nel Nord Europa. In particolare, nelle Alpi, il Dryas antichissimo corrisponde allo stadiale di Gschnitz.
+
+Prende il nome ad alcuni pollini della specie Dryas octopetala, rilevata nei carotaggi prelevati a scopo paleopalinologico da ghiacciai e torbiere. Il Dryas antichissimo corrisponde alla zona di polline Ia.</rdfs:comment>
+        <rdfs:label>Ancient dryas</rdfs:label>
     </owl:Class>
     
 
@@ -514,9 +518,9 @@ Risulta suddivisa in tre sottoclassi, che comprendono le diverse unità geocrono
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Archeological_Evidence -->
+    <!-- http://www.unict.disum.it/chronontology#ArcheologicalEvidence -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Archeological_Evidence">
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#ArcheologicalEvidence">
         <rdfs:comment xml:lang="it">Classe che raccoglie testimonianze archeologiche (Palazzi, reperti ecc.) in sottoclassi specifiche.</rdfs:comment>
         <rdfs:label xml:lang="en">Archeological evidences</rdfs:label>
     </owl:Class>
@@ -539,10 +543,12 @@ Risulta suddivisa in tre sottoclassi, che comprendono le diverse unità geocrono
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Aridify_event -->
+    <!-- http://www.unict.disum.it/chronontology#AridifyEvent -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Aridify_event">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Climate_events"/>
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#AridifyEvent">
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#ClimateEvents"/>
+        <rdfs:label>Aridify event</rdfs:label>
+        <rdfs:label xml:lang="en">Aridify event</rdfs:label>
     </owl:Class>
     
 
@@ -558,7 +564,7 @@ Risulta suddivisa in tre sottoclassi, che comprendono le diverse unità geocrono
     <!-- http://www.unict.disum.it/chronontology#Atlantic -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Atlantic">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Periodization_Quaternary"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#PeriodizationQuaternary"/>
     </owl:Class>
     
 
@@ -571,10 +577,10 @@ Risulta suddivisa in tre sottoclassi, che comprendono le diverse unità geocrono
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Bolling-Allerod -->
+    <!-- http://www.unict.disum.it/chronontology#BollingAllerod -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Bolling-Allerod">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Climate_Changes_Pleistocene"/>
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#BollingAllerod">
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#ClimateChangesPleistocene"/>
         <rdfs:label>Bolling allerod</rdfs:label>
     </owl:Class>
     
@@ -583,7 +589,7 @@ Risulta suddivisa in tre sottoclassi, che comprendono le diverse unità geocrono
     <!-- http://www.unict.disum.it/chronontology#Boreal -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Boreal">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Periodization_Quaternary"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#PeriodizationQuaternary"/>
     </owl:Class>
     
 
@@ -591,7 +597,7 @@ Risulta suddivisa in tre sottoclassi, che comprendono le diverse unità geocrono
     <!-- http://www.unict.disum.it/chronontology#Bronze_Age -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Bronze_Age">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Metals_Age"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#MetalsAge"/>
     </owl:Class>
     
 
@@ -620,65 +626,77 @@ Risulta suddivisa in tre sottoclassi, che comprendono le diverse unità geocrono
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Classical_Age -->
+    <!-- http://www.unict.disum.it/chronontology#CentralNorthItaly -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Classical_Age">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#CentralNorthItaly">
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#MediterraneanEurope"/>
+        <rdfs:label xml:lang="en">Central and north Italy</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Climate_Changes -->
+    <!-- http://www.unict.disum.it/chronontology#ClassicalAge -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Climate_Changes">
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#ClassicalAge">
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
+        <rdfs:comment xml:lang="it">Individuo generale della periodizzazione relativa. Collegato alle periodizzazioni specifiche nelle singole aree attraverso il reasoner.</rdfs:comment>
+        <rdfs:label xml:lang="en">Classical age</rdfs:label>
+        <rdfs:seeAlso xml:lang="it">https://it.wikipedia.org/wiki/Antichit%C3%A0_classica</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.unict.disum.it/chronontology#ClimateChanges -->
+
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#ClimateChanges">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.unict.disum.it/chronontology#climateEventVerifiedIn"/>
                 <owl:someValuesFrom rdf:resource="http://www.unict.disum.it/chronontology#Periodization"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Absolute_Chronology"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#AbsoluteChronology"/>
         <rdfs:comment xml:lang="it">Classe che contiene le fluttuazioni climatiche verificatesi durante le età geologiche e gli specifici eventi climatici avvenuti in essi.</rdfs:comment>
         <rdfs:label xml:lang="en">Climate changes</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Climate_Changes_Holocene -->
+    <!-- http://www.unict.disum.it/chronontology#ClimateChangesHolocene -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Climate_Changes_Holocene">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Climate_Changes"/>
-        <owl:disjointWith rdf:resource="http://www.unict.disum.it/chronontology#Climate_Changes_Pleistocene"/>
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#ClimateChangesHolocene">
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#ClimateChanges"/>
+        <owl:disjointWith rdf:resource="http://www.unict.disum.it/chronontology#ClimateChangesPleistocene"/>
         <rdfs:comment xml:lang="it">Sottoclasse che contiene le fluttuazioni climatiche relative all&apos;olocene.</rdfs:comment>
         <rdfs:label>Climate change holocene</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Climate_Changes_Pleistocene -->
+    <!-- http://www.unict.disum.it/chronontology#ClimateChangesPleistocene -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Climate_Changes_Pleistocene">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Climate_Changes"/>
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#ClimateChangesPleistocene">
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#ClimateChanges"/>
         <rdfs:comment xml:lang="it">Sottoclasse che contiene le fluttuazioni climatiche relative al pleistocene.</rdfs:comment>
         <rdfs:label>Climate change pleistocene</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Climate_events -->
+    <!-- http://www.unict.disum.it/chronontology#ClimateEvents -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Climate_events">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Climate_Changes"/>
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#ClimateEvents">
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#ClimateChanges"/>
         <rdfs:comment xml:lang="it">Sottoclasse che contiene specifici eventi climatici (desertificazioni, aritià, ecc.)</rdfs:comment>
         <rdfs:label xml:lang="en">Climate events</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Cold_event -->
+    <!-- http://www.unict.disum.it/chronontology#ColdEvent -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Cold_event">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Climate_events"/>
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#ColdEvent">
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#ClimateEvents"/>
         <rdfs:label>Cold event</rdfs:label>
     </owl:Class>
     
@@ -687,7 +705,7 @@ Risulta suddivisa in tre sottoclassi, che comprendono le diverse unità geocrono
     <!-- http://www.unict.disum.it/chronontology#Copper_Age -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Copper_Age">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Metals_Age"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#MetalsAge"/>
     </owl:Class>
     
 
@@ -703,18 +721,18 @@ Risulta suddivisa in tre sottoclassi, che comprendono le diverse unità geocrono
     <!-- http://www.unict.disum.it/chronontology#Cyprus -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Cyprus">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Mediterranean_Asia"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#MediterraneanAsia"/>
     </owl:Class>
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Dating_Methods -->
+    <!-- http://www.unict.disum.it/chronontology#DatingMethods -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Dating_Methods">
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#DatingMethods">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.unict.disum.it/chronontology#dateObtainedBy"/>
-                <owl:someValuesFrom rdf:resource="http://www.unict.disum.it/chronontology#Archeological_Evidence"/>
+                <owl:someValuesFrom rdf:resource="http://www.unict.disum.it/chronontology#ArcheologicalEvidence"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:comment xml:lang="it">Classe che contiene i sistemi di datazione utilizzati per le periodizzazioni relative e assolute.</rdfs:comment>
@@ -734,7 +752,23 @@ Risulta suddivisa in tre sottoclassi, che comprendono le diverse unità geocrono
     <!-- http://www.unict.disum.it/chronontology#Dryas -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Dryas">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Periodization_Quaternary"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#PeriodizationQuaternary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.unict.disum.it/chronontology#EarlyMesolithic -->
+
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#EarlyMesolithic">
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Mesolithic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.unict.disum.it/chronontology#EarlyNeolithic -->
+
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#EarlyNeolithic">
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Neolithic"/>
     </owl:Class>
     
 
@@ -763,26 +797,11 @@ Risulta suddivisa in tre sottoclassi, che comprendono le diverse unità geocrono
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Early_Mesolithic -->
+    <!-- http://www.unict.disum.it/chronontology#EastAdriatic -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Early_Mesolithic">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Mesolithic"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.unict.disum.it/chronontology#Early_Neolithic -->
-
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Early_Neolithic">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Neolithic"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.unict.disum.it/chronontology#East_Adriatic -->
-
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#East_Adriatic">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Mediterranean_Europe"/>
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#EastAdriatic">
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#MediterraneanEurope"/>
+        <rdfs:label xml:lang="en">East adriatic</rdfs:label>
     </owl:Class>
     
 
@@ -790,7 +809,7 @@ Risulta suddivisa in tre sottoclassi, che comprendono le diverse unità geocrono
     <!-- http://www.unict.disum.it/chronontology#Egypt -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Egypt">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#North_Africa"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#NorthAfrica"/>
     </owl:Class>
     
 
@@ -814,7 +833,7 @@ Risulta suddivisa in tre sottoclassi, che comprendono le diverse unità geocrono
     <!-- http://www.unict.disum.it/chronontology#Eon -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Eon">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Absolute_Chronology"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#AbsoluteChronology"/>
         <rdfs:comment xml:lang="it">Unità cronologica superiore fra le suddivisioni della scala dei tempi geologici. 
 Gli eoni sono quattro:
 - Fanerozoico (iniziato 545 milioni di anni fa)
@@ -844,7 +863,7 @@ Età</rdfs:comment>
     <!-- http://www.unict.disum.it/chronontology#Finds -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Finds">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Archeological_Evidence"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#ArcheologicalEvidence"/>
         <rdfs:comment xml:lang="it">Sottoclasse che contiene testimonianze archeologiche delle diverse aree.</rdfs:comment>
     </owl:Class>
     
@@ -885,7 +904,7 @@ Età</rdfs:comment>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.unict.disum.it/chronontology#isAbsoluteChronologyOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.unict.disum.it/chronontology#Classical_Age"/>
+                <owl:someValuesFrom rdf:resource="http://www.unict.disum.it/chronontology#ClassicalAge"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
@@ -920,7 +939,7 @@ Età</rdfs:comment>
     <!-- http://www.unict.disum.it/chronontology#Iberia -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Iberia">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Mediterranean_Europe"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#MediterraneanEurope"/>
     </owl:Class>
     
 
@@ -928,7 +947,7 @@ Età</rdfs:comment>
     <!-- http://www.unict.disum.it/chronontology#Iron_Age -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Iron_Age">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Metals_Age"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#MetalsAge"/>
     </owl:Class>
     
 
@@ -936,7 +955,7 @@ Età</rdfs:comment>
     <!-- http://www.unict.disum.it/chronontology#Islands -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Islands">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Mediterranean_Europe"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#MediterraneanEurope"/>
     </owl:Class>
     
 
@@ -944,7 +963,7 @@ Età</rdfs:comment>
     <!-- http://www.unict.disum.it/chronontology#Jazira -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Jazira">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#West_Asia"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#WestAsia"/>
     </owl:Class>
     
 
@@ -960,7 +979,23 @@ Età</rdfs:comment>
     <!-- http://www.unict.disum.it/chronontology#Knossos -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Knossos">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Minoan_Palaces"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#MinoanPalaces"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.unict.disum.it/chronontology#LateMesolithic -->
+
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#LateMesolithic">
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Mesolithic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.unict.disum.it/chronontology#LateNeolithic -->
+
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#LateNeolithic">
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Neolithic"/>
     </owl:Class>
     
 
@@ -981,26 +1016,10 @@ Età</rdfs:comment>
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Late_Mesolithic -->
-
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Late_Mesolithic">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Mesolithic"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.unict.disum.it/chronontology#Late_Neolithic -->
-
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Late_Neolithic">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Neolithic"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.unict.disum.it/chronontology#Levant -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Levant">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#West_Asia"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#WestAsia"/>
     </owl:Class>
     
 
@@ -1008,7 +1027,7 @@ Età</rdfs:comment>
     <!-- http://www.unict.disum.it/chronontology#Malia -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Malia">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Minoan_Palaces"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#MinoanPalaces"/>
     </owl:Class>
     
 
@@ -1021,26 +1040,26 @@ Età</rdfs:comment>
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Mediterranean_Asia -->
+    <!-- http://www.unict.disum.it/chronontology#MediterraneanAsia -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Mediterranean_Asia">
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#MediterraneanAsia">
         <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Asia"/>
     </owl:Class>
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Mediterranean_Europe -->
+    <!-- http://www.unict.disum.it/chronontology#MediterraneanEurope -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Mediterranean_Europe">
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#MediterraneanEurope">
         <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Europe"/>
     </owl:Class>
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Mediterranean_North_Africa -->
+    <!-- http://www.unict.disum.it/chronontology#MediterraneanNorthAfrica -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Mediterranean_North_Africa">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#North_Africa"/>
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#MediterraneanNorthAfrica">
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#NorthAfrica"/>
     </owl:Class>
     
 
@@ -1056,7 +1075,7 @@ Età</rdfs:comment>
     <!-- http://www.unict.disum.it/chronontology#Mesolithic -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Mesolithic">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Stone_Age"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#StoneAge"/>
     </owl:Class>
     
 
@@ -1077,16 +1096,32 @@ Età</rdfs:comment>
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Metals_Age -->
+    <!-- http://www.unict.disum.it/chronontology#MetalsAge -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Metals_Age">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#MetalsAge">
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
         <rdfs:comment xml:lang="it">Sottoclasse che contiene gli i periodi relativi all&apos;età dei metalli seconda la classificazione in:
 Età del Rame
 Età del Bronzo
 Età del Ferro</rdfs:comment>
         <rdfs:label xml:lang="en">Metals age</rdfs:label>
         <rdfs:seeAlso xml:lang="it">Sottoclasse che contiene gli i periodi relativi all&apos;età classica, qui intesa principalmente come età greco-romana.</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.unict.disum.it/chronontology#MiddleMesolithic -->
+
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#MiddleMesolithic">
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Mesolithic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.unict.disum.it/chronontology#MiddleNeolithic -->
+
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#MiddleNeolithic">
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Neolithic"/>
     </owl:Class>
     
 
@@ -1115,31 +1150,15 @@ Età del Ferro</rdfs:comment>
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Middle_Mesolithic -->
+    <!-- http://www.unict.disum.it/chronontology#MinoanPalaces -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Middle_Mesolithic">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Mesolithic"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.unict.disum.it/chronontology#Middle_Neolithic -->
-
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Middle_Neolithic">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Neolithic"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.unict.disum.it/chronontology#Minoan_Palaces -->
-
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Minoan_Palaces">
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#MinoanPalaces">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Palaces"/>
                     <owl:Class>
-                        <owl:complementOf rdf:resource="http://www.unict.disum.it/chronontology#Mycenean_Palaces"/>
+                        <owl:complementOf rdf:resource="http://www.unict.disum.it/chronontology#MyceneanPalaces"/>
                     </owl:Class>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1167,9 +1186,9 @@ Età del Ferro</rdfs:comment>
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Mycenean_Palaces -->
+    <!-- http://www.unict.disum.it/chronontology#MyceneanPalaces -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Mycenean_Palaces">
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#MyceneanPalaces">
         <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Palaces"/>
     </owl:Class>
     
@@ -1195,7 +1214,7 @@ Età del Ferro</rdfs:comment>
     <!-- http://www.unict.disum.it/chronontology#Neolithic -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Neolithic">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Stone_Age"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#StoneAge"/>
     </owl:Class>
     
 
@@ -1208,18 +1227,21 @@ Età del Ferro</rdfs:comment>
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Nile_Delta -->
+    <!-- http://www.unict.disum.it/chronontology#NileDelta -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Nile_Delta">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#North_Africa"/>
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#NileDelta">
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#NorthAfrica"/>
+        <rdfs:label xml:lang="en">Nile delta</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#North_Africa -->
+    <!-- http://www.unict.disum.it/chronontology#NorthAfrica -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#North_Africa">
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#NorthAfrica">
         <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Africa"/>
+        <rdfs:comment xml:lang="it">Individuo generale dell&apos;area geografica di riferimento, collegato alle periodizzazioni relative all&apos;area attraverso il reasoner.</rdfs:comment>
+        <rdfs:label xml:lang="en">North Africa</rdfs:label>
     </owl:Class>
     
 
@@ -1232,11 +1254,11 @@ Età del Ferro</rdfs:comment>
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Optimum_holocene -->
+    <!-- http://www.unict.disum.it/chronontology#OptimumHolocene -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Optimum_holocene">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Climate_Changes_Holocene"/>
-        <owl:disjointWith rdf:resource="http://www.unict.disum.it/chronontology#Roman_Warm_period"/>
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#OptimumHolocene">
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#ClimateChangesHolocene"/>
+        <owl:disjointWith rdf:resource="http://www.unict.disum.it/chronontology#RomanWarmPeriod"/>
         <rdfs:label>Optimum holocene</rdfs:label>
     </owl:Class>
     
@@ -1250,10 +1272,10 @@ Età del Ferro</rdfs:comment>
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Oscillating_wetter_drier -->
+    <!-- http://www.unict.disum.it/chronontology#OscillatingWetterDrier -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Oscillating_wetter_drier">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Climate_Changes_Holocene"/>
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#OscillatingWetterDrier">
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#ClimateChangesHolocene"/>
         <rdfs:label>Oscillating wetter drier</rdfs:label>
     </owl:Class>
     
@@ -1262,7 +1284,7 @@ Età del Ferro</rdfs:comment>
     <!-- http://www.unict.disum.it/chronontology#Palaces -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Palaces">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Archeological_Evidence"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#ArcheologicalEvidence"/>
         <rdfs:comment xml:lang="it">Sottoclasse che contiene testimonianze archeologiche di tipo palaziale, a loro volta suddivise in culture di appartenza.</rdfs:comment>
     </owl:Class>
     
@@ -1295,7 +1317,7 @@ Età del Ferro</rdfs:comment>
     <!-- http://www.unict.disum.it/chronontology#Paleolithic -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Paleolithic">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Stone_Age"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#StoneAge"/>
     </owl:Class>
     
 
@@ -1333,7 +1355,7 @@ Età del Ferro</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://www.unict.disum.it/chronontology#Eon"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Absolute_Chronology"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#AbsoluteChronology"/>
         <rdfs:comment xml:lang="it">Fluttuazioni climatiche verificatesi durante le età geologiche.</rdfs:comment>
         <rdfs:label xml:lang="en">Climate periodization</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Geologic_temperature_record</rdfs:seeAlso>
@@ -1341,9 +1363,9 @@ Età del Ferro</rdfs:comment>
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Periodization_Quaternary -->
+    <!-- http://www.unict.disum.it/chronontology#PeriodizationQuaternary -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Periodization_Quaternary">
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#PeriodizationQuaternary">
         <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Periodization"/>
         <rdfs:comment xml:lang="it">Per le fluttuazioni climatiche del Quaternario di segue la classificazione di Blytt-Sernander, cioè una serie di fasi proposta per le fluttuazioni climatiche del Nord Europa basati sullo studio delle torbiere danesi fatto da Axel Gudbrand Blytt (1876) e Rutger Sernander (1908).</rdfs:comment>
         <rdfs:label xml:lang="en">Periodization Quaternary</rdfs:label>
@@ -1355,7 +1377,7 @@ Età del Ferro</rdfs:comment>
     <!-- http://www.unict.disum.it/chronontology#Phaistos -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Phaistos">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Minoan_Palaces"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#MinoanPalaces"/>
     </owl:Class>
     
 
@@ -1393,7 +1415,7 @@ Età del Ferro</rdfs:comment>
     <!-- http://www.unict.disum.it/chronontology#PreBoreal -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#PreBoreal">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Periodization_Quaternary"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#PeriodizationQuaternary"/>
     </owl:Class>
     
 
@@ -1409,7 +1431,7 @@ Età del Ferro</rdfs:comment>
     <!-- http://www.unict.disum.it/chronontology#Pylos -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Pylos">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Mycenean_Palaces"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#MyceneanPalaces"/>
     </owl:Class>
     
 
@@ -1420,7 +1442,7 @@ Età del Ferro</rdfs:comment>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.unict.disum.it/chronontology#isAbsoluteChronologyOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
+                <owl:someValuesFrom rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Cenozoic"/>
@@ -1443,9 +1465,9 @@ Età del Ferro</rdfs:comment>
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Relative_Chronology -->
+    <!-- http://www.unict.disum.it/chronontology#RelativeChronology -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Relative_Chronology">
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#RelativeChronology">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.unict.disum.it/chronontology#isRelativeChronologyOf"/>
@@ -1475,10 +1497,10 @@ Gli individui appartenenti alla cronolgia relativa sono stati collegati alle flu
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Roman_Warm_period -->
+    <!-- http://www.unict.disum.it/chronontology#RomanWarmPeriod -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Roman_Warm_period">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Climate_Changes_Holocene"/>
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#RomanWarmPeriod">
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#ClimateChangesHolocene"/>
         <rdfs:label>Roman warm period</rdfs:label>
     </owl:Class>
     
@@ -1487,15 +1509,25 @@ Gli individui appartenenti alla cronolgia relativa sono stati collegati alle flu
     <!-- http://www.unict.disum.it/chronontology#Sahara -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Sahara">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#North_Africa"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#NorthAfrica"/>
     </owl:Class>
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Saharian_desertification -->
+    <!-- http://www.unict.disum.it/chronontology#SaharianDesertification -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Saharian_desertification">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Climate_events"/>
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#SaharianDesertification">
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#ClimateEvents"/>
+        <rdfs:label>Saharian desertification</rdfs:label>
+        <rdfs:label xml:lang="en">Saharian desertification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.unict.disum.it/chronontology#SardiniaCorsica -->
+
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#SardiniaCorsica">
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Islands"/>
     </owl:Class>
     
 
@@ -1503,7 +1535,7 @@ Gli individui appartenenti alla cronolgia relativa sono stati collegati alle flu
     <!-- http://www.unict.disum.it/chronontology#Settlement -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Settlement">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Archeological_Evidence"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#ArcheologicalEvidence"/>
         <rdfs:comment xml:lang="it">Sottoclasse che contiene specifiche popolazioni trattate come testimonianze archeologiche dell&apos;area di interesse.</rdfs:comment>
     </owl:Class>
     
@@ -1525,26 +1557,28 @@ Gli individui appartenenti alla cronolgia relativa sono stati collegati alle flu
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Southern_France -->
+    <!-- http://www.unict.disum.it/chronontology#SouthernFrance -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Southern_France">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Mediterranean_Europe"/>
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#SouthernFrance">
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#MediterraneanEurope"/>
+        <rdfs:label xml:lang="en">Southern France</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Southern_Italy -->
+    <!-- http://www.unict.disum.it/chronontology#SouthernItaly -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Southern_Italy">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Mediterranean_Europe"/>
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#SouthernItaly">
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#MediterraneanEurope"/>
+        <rdfs:label xml:lang="en">Southern Italy</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Stone_Age -->
+    <!-- http://www.unict.disum.it/chronontology#StoneAge -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Stone_Age">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#StoneAge">
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
         <rdfs:comment xml:lang="it">Sottoclasse che contiene gli i periodi relativi all&apos;età dei metalli seconda la classificazione in:
 Paleolitico
 Mesolitico
@@ -1558,7 +1592,7 @@ Neolitico</rdfs:comment>
     <!-- http://www.unict.disum.it/chronontology#SubAtlantic -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#SubAtlantic">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Periodization_Quaternary"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#PeriodizationQuaternary"/>
     </owl:Class>
     
 
@@ -1566,7 +1600,7 @@ Neolitico</rdfs:comment>
     <!-- http://www.unict.disum.it/chronontology#SubBoreal -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#SubBoreal">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Periodization_Quaternary"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#PeriodizationQuaternary"/>
     </owl:Class>
     
 
@@ -1582,31 +1616,33 @@ Neolitico</rdfs:comment>
     <!-- http://www.unict.disum.it/chronontology#Tyrins -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Tyrins">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Mycenean_Palaces"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#MyceneanPalaces"/>
     </owl:Class>
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Uneven_shift_to_drier -->
+    <!-- http://www.unict.disum.it/chronontology#UnevenShiftToDrier -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Uneven_shift_to_drier">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Climate_Changes_Holocene"/>
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#UnevenShiftToDrier">
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#ClimateChangesHolocene"/>
+        <rdfs:comment xml:lang="it">Periodo di passaggio climatico, caratterizzato da un clima secco e arido.</rdfs:comment>
+        <rdfs:label>Uneven shift to drier</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#West_Asia -->
+    <!-- http://www.unict.disum.it/chronontology#WestAsia -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#West_Asia">
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#WestAsia">
         <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Asia"/>
     </owl:Class>
     
 
 
-    <!-- http://www.unict.disum.it/chronontology#Younger_Dryas -->
+    <!-- http://www.unict.disum.it/chronontology#YoungerDryas -->
 
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Younger_Dryas">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Climate_Changes_Pleistocene"/>
+    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#YoungerDryas">
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#ClimateChangesPleistocene"/>
         <rdfs:label>Younger dryas</rdfs:label>
     </owl:Class>
     
@@ -1615,23 +1651,7 @@ Neolitico</rdfs:comment>
     <!-- http://www.unict.disum.it/chronontology#Zakros -->
 
     <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Zakros">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Minoan_Palaces"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.unict.disum.it/chronontology#Central/North_Italy -->
-
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Central/North_Italy">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Mediterranean_Europe"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.unict.disum.it/chronontology#Sardinia/Corsica -->
-
-    <owl:Class rdf:about="http://www.unict.disum.it/chronontology#Sardinia/Corsica">
-        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#Islands"/>
+        <rdfs:subClassOf rdf:resource="http://www.unict.disum.it/chronontology#MinoanPalaces"/>
     </owl:Class>
     
 
@@ -1651,7 +1671,7 @@ Neolitico</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Aegean">
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Aegean"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#West_Asia"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#WestAsia"/>
         <chronontology1:Geolocation rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.google.com/maps/place/Mar+Egeo/@39.3342121,24.8175921,6.95z/data=!4m5!3m4!1s0x14959c66749e1ba9:0x89058c37001751b2!8m2!3d39.019184!4d25.268555</chronontology1:Geolocation>
         <chronontology1:HasWiki rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://it.wikipedia.org/wiki/Civilt%C3%A0_egea</chronontology1:HasWiki>
         <chronontology1:References rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.pagineveloci.net/articoli/preistoria_grecia.html</chronontology1:References>
@@ -1738,7 +1758,7 @@ Neolitico</rdfs:comment>
     <!-- http://www.unict.disum.it/chronontology#Aegean_Classical -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Aegean_Classical">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Classical_Age"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#ClassicalAge"/>
         <chronontology1:IsSubPeriodizationOf rdf:resource="http://www.unict.disum.it/chronontology#Aegean"/>
         <chronontology1:isRelativeChronologyOf rdf:resource="http://www.unict.disum.it/chronontology#Classical_Age"/>
         <chronontology1:isSubperiodOf rdf:resource="http://www.unict.disum.it/chronontology#Classical_Age"/>
@@ -1837,7 +1857,7 @@ Neolitico</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Aegean_Neolithic_Early">
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Aegean"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Early_Neolithic"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#EarlyNeolithic"/>
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Neolithic"/>
         <chronontology1:IsSubPeriodizationOf rdf:resource="http://www.unict.disum.it/chronontology#Aegean"/>
         <chronontology1:isRelativeChronologyOf rdf:resource="http://www.unict.disum.it/chronontology#Neolithic"/>
@@ -1854,7 +1874,7 @@ Neolitico</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Aegean_Neolithic_Final">
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Aegean"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Late_Neolithic"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#LateNeolithic"/>
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Neolithic"/>
         <chronontology1:IsSubPeriodizationOf rdf:resource="http://www.unict.disum.it/chronontology#Aegean"/>
         <chronontology1:isRelativeChronologyOf rdf:resource="http://www.unict.disum.it/chronontology#Neolithic"/>
@@ -1871,7 +1891,7 @@ Neolitico</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Aegean_Neolithic_Late">
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Aegean"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Late_Neolithic"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#LateNeolithic"/>
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Neolithic"/>
         <chronontology1:IsSubPeriodizationOf rdf:resource="http://www.unict.disum.it/chronontology#Aegean"/>
         <chronontology1:isRelativeChronologyOf rdf:resource="http://www.unict.disum.it/chronontology#Neolithic"/>
@@ -1888,7 +1908,7 @@ Neolitico</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Aegean_Neolithic_Middle">
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Aegean"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Middle_Neolithic"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#MiddleNeolithic"/>
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Neolithic"/>
         <chronontology1:IsSubPeriodizationOf rdf:resource="http://www.unict.disum.it/chronontology#Aegean"/>
         <chronontology1:isRelativeChronologyOf rdf:resource="http://www.unict.disum.it/chronontology#Neolithic"/>
@@ -1956,7 +1976,7 @@ Neolitico</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Anatolia">
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Anatolia"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#West_Asia"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#WestAsia"/>
         <chronontology1:Geolocation rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.google.com/maps/place/Turchia/@38.7412482,26.1844276,5z/data=!3m1!4b1!4m5!3m4!1s0x14b0155c964f2671:0x40d9dbd42a625f2a!8m2!3d38.963745!4d35.243322</chronontology1:Geolocation>
         <chronontology1:HasWiki rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://it.wikipedia.org/wiki/Anatolia</chronontology1:HasWiki>
     </owl:NamedIndividual>
@@ -2148,8 +2168,8 @@ Neolitico</rdfs:comment>
     <!-- http://www.unict.disum.it/chronontology#Ancient_dryas -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Ancient_dryas">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Ancient_dryas"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Climate_Changes"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#AncientDryas"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#ClimateChanges"/>
         <chronontology1:isClimateChangeOf rdf:resource="http://www.unict.disum.it/chronontology#Pleistocene"/>
         <chronontology1:isClimatePeriodizationOf rdf:resource="http://www.unict.disum.it/chronontology#Pleistocene"/>
         <chronontology1:End_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-15000</chronontology1:End_Date>
@@ -2162,8 +2182,8 @@ Neolitico</rdfs:comment>
     <!-- http://www.unict.disum.it/chronontology#Aridify_event -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Aridify_event">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Aridify_event"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Climate_Changes"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#AridifyEvent"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#ClimateChanges"/>
         <chronontology1:climateEventVerifiedIn rdf:resource="http://www.unict.disum.it/chronontology#Holocene"/>
         <chronontology1:climateEventVerifiedIn rdf:resource="http://www.unict.disum.it/chronontology#Uneven_shift_to_drier"/>
         <chronontology1:Date rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-2100</chronontology1:Date>
@@ -2211,7 +2231,7 @@ Neolitico</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Balearics">
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Balearics"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Mediterranean_Europe"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#MediterraneanEurope"/>
         <chronontology1:Geolocation rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.google.com/maps/place/Isole+Baleari/@39.3372388,0.4923543,7z/data=!3m1!4b1!4m5!3m4!1s0x1297bbfff404864b:0xd5896ba9c72db2c4!8m2!3d39.3587759!4d2.7356328</chronontology1:Geolocation>
         <chronontology1:HasWiki rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://it.wikipedia.org/wiki/Isole_Baleari</chronontology1:HasWiki>
     </owl:NamedIndividual>
@@ -2335,8 +2355,8 @@ Neolitico</rdfs:comment>
     <!-- http://www.unict.disum.it/chronontology#Bolling_allerod -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Bolling_allerod">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Bolling-Allerod"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Climate_Changes"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#BollingAllerod"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#ClimateChanges"/>
         <chronontology1:climateEventVerifiedIn rdf:resource="http://www.unict.disum.it/chronontology#Pleistocene"/>
         <chronontology1:End_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-12700</chronontology1:End_Date>
         <chronontology1:Start_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-14700</chronontology1:Start_Date>
@@ -2434,8 +2454,8 @@ Il metodo del 14C permette di datare materiali di origine organica (ossa, legno,
     <!-- http://www.unict.disum.it/chronontology#Cold_Event -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Cold_Event">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Climate_Changes"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Cold_event"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#ClimateChanges"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#ColdEvent"/>
         <chronontology1:climateEventVerifiedIn rdf:resource="http://www.unict.disum.it/chronontology#Early_Holocene_Warm_Optimum"/>
         <chronontology1:climateEventVerifiedIn rdf:resource="http://www.unict.disum.it/chronontology#Holocene"/>
         <chronontology1:Date rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-6000</chronontology1:Date>
@@ -2447,8 +2467,8 @@ Il metodo del 14C permette di datare materiali di origine organica (ossa, legno,
     <!-- http://www.unict.disum.it/chronontology#Cold_Younger_Dryas -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Cold_Younger_Dryas">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Climate_Changes"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Younger_Dryas"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#ClimateChanges"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#YoungerDryas"/>
         <chronontology1:dateObtainedBy rdf:resource="http://www.unict.disum.it/chronontology#C-14"/>
         <chronontology1:isClimateChangeOf rdf:resource="http://www.unict.disum.it/chronontology#Holocene"/>
         <chronontology1:isClimateChangeOf rdf:resource="http://www.unict.disum.it/chronontology#Pleistocene"/>
@@ -2478,7 +2498,7 @@ Il Dryas recente è anche un periodo climatico Blytt-Sernander rilevato negli st
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Cyprus">
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Cyprus"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Mediterranean_Asia"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#MediterraneanAsia"/>
         <chronontology1:Geolocation rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.google.com/maps/place/Cipro/@35.1675093,32.8647433,9z/data=!3m1!4b1!4m5!3m4!1s0x14de1767ca494d55:0x324c3c807fc4146e!8m2!3d35.126413!4d33.429859</chronontology1:Geolocation>
         <chronontology1:HasWiki rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://it.wikipedia.org/wiki/Storia_di_Cipro</chronontology1:HasWiki>
     </owl:NamedIndividual>
@@ -2531,8 +2551,8 @@ Il metodo è stato messo a punto dall&apos;americano Andrew Ellicott Douglass ne
     <!-- http://www.unict.disum.it/chronontology#Early_Holocene_Warm_Optimum -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Early_Holocene_Warm_Optimum">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Climate_Changes"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Optimum_holocene"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#ClimateChanges"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#OptimumHolocene"/>
         <chronontology1:isClimateChangeOf rdf:resource="http://www.unict.disum.it/chronontology#Holocene"/>
         <chronontology1:HasWiki rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Holocene_climatic_optimum</chronontology1:HasWiki>
         <chronontology1:Start_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-5000</chronontology1:Start_Date>
@@ -2548,8 +2568,8 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
     <!-- http://www.unict.disum.it/chronontology#East_Adriatic -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#East_Adriatic">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#East_Adriatic"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Mediterranean_Europe"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#EastAdriatic"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#MediterraneanEurope"/>
         <chronontology1:Geolocation rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.google.com/maps/place/Mare+Adriatico/@42.5993843,11.6398235,6z/data=!3m1!4b1!4m5!3m4!1s0x132cdd6541cddfab:0x7ef34f7c5d0522f7!8m2!3d41.8550904!4d17.2902839</chronontology1:Geolocation>
         <chronontology1:HasWiki rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://it.wikipedia.org/wiki/Siti_archeologici_dell%27Italia_preistorica_e_protostorica</chronontology1:HasWiki>
     </owl:NamedIndividual>
@@ -2574,7 +2594,7 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Egypt">
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Egypt"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#North_Africa"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#NorthAfrica"/>
         <chronontology1:Geolocation rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.google.com/maps/place/Egitto/@26.6194394,21.8566593,5z/data=!3m1!4b1!4m5!3m4!1s0x14368976c35c36e9:0x2c45a00925c4c444!8m2!3d26.820553!4d30.802498</chronontology1:Geolocation>
         <chronontology1:HasWiki rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://it.wikipedia.org/wiki/Antico_Egitto</chronontology1:HasWiki>
     </owl:NamedIndividual>
@@ -2883,7 +2903,7 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Iberia">
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Iberia"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Mediterranean_Europe"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#MediterraneanEurope"/>
         <chronontology1:Geolocation rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.google.com/maps/search/iberia+preistoria/@40.4369792,-11.6973331,5z/data=!3m1!4b1</chronontology1:Geolocation>
         <chronontology1:HasWiki rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://it.wikiqube.net/wiki/Prehistoric_Iberia</chronontology1:HasWiki>
     </owl:NamedIndividual>
@@ -2902,7 +2922,7 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Jazira">
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Jazira"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#West_Asia"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#WestAsia"/>
         <owl:sameAs rdf:resource="http://www.unict.disum.it/chronontology#North_Mesopotamia"/>
         <chronontology1:isPopulatedBy rdf:resource="http://www.unict.disum.it/chronontology#Babylonian"/>
         <chronontology1:isPopulatedBy rdf:resource="http://www.unict.disum.it/chronontology#Middle_Assyrian"/>
@@ -3162,8 +3182,8 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
     <!-- http://www.unict.disum.it/chronontology#Knossos -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Knossos">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Archeological_Evidence"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Minoan_Palaces"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#ArcheologicalEvidence"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#MinoanPalaces"/>
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Palaces"/>
         <chronontology1:isArcheologicalEvidenceOf rdf:resource="http://www.unict.disum.it/chronontology#Minoan_Settlement"/>
         <chronontology1:redatedBy rdf:resource="http://www.unict.disum.it/chronontology#Arthur_Evans"/>
@@ -3189,7 +3209,7 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Levant">
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Levant"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#West_Asia"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#WestAsia"/>
         <chronontology1:isPopulatedBy rdf:resource="http://www.unict.disum.it/chronontology#Babylonian"/>
         <chronontology1:isPopulatedBy rdf:resource="http://www.unict.disum.it/chronontology#Natufian"/>
         <chronontology1:isPopulatedBy rdf:resource="http://www.unict.disum.it/chronontology#Persian"/>
@@ -3437,7 +3457,7 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
     <!-- http://www.unict.disum.it/chronontology#Levant_Neolithic_Late -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Levant_Neolithic_Late">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Late_Neolithic"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#LateNeolithic"/>
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Levant"/>
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Neolithic"/>
         <chronontology1:isPeriodizationOf rdf:resource="http://www.unict.disum.it/chronontology#Levant"/>
@@ -3481,7 +3501,7 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
     <!-- http://www.unict.disum.it/chronontology#Levant_PPNB-C_Final -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Levant_PPNB-C_Final">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Late_Neolithic"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#LateNeolithic"/>
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Levant"/>
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Neolithic"/>
         <chronontology1:IsSubPeriodizationOf rdf:resource="http://www.unict.disum.it/chronontology#Levant_PPNB"/>
@@ -3498,7 +3518,7 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
     <!-- http://www.unict.disum.it/chronontology#Levant_PPNB_Early -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Levant_PPNB_Early">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Early_Neolithic"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#EarlyNeolithic"/>
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Levant"/>
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Neolithic"/>
         <chronontology1:IsSubPeriodizationOf rdf:resource="http://www.unict.disum.it/chronontology#Levant_PPNB"/>
@@ -3515,7 +3535,7 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
     <!-- http://www.unict.disum.it/chronontology#Levant_PPNB_Late -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Levant_PPNB_Late">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Late_Neolithic"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#LateNeolithic"/>
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Levant"/>
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Neolithic"/>
         <chronontology1:IsSubPeriodizationOf rdf:resource="http://www.unict.disum.it/chronontology#Levant_PPNB"/>
@@ -3533,7 +3553,7 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Levant_PPNB_Middle">
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Levant"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Middle_Neolithic"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#MiddleNeolithic"/>
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Neolithic"/>
         <chronontology1:IsSubPeriodizationOf rdf:resource="http://www.unict.disum.it/chronontology#Levant_PPNB"/>
         <chronontology1:isPeriodizationOf rdf:resource="http://www.unict.disum.it/chronontology#Levant"/>
@@ -3596,8 +3616,8 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
     <!-- http://www.unict.disum.it/chronontology#Malia -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Malia">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Archeological_Evidence"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Minoan_Palaces"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#ArcheologicalEvidence"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#MinoanPalaces"/>
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Palaces"/>
         <chronontology1:isArcheologicalEvidenceOf rdf:resource="http://www.unict.disum.it/chronontology#Minoan_Settlement"/>
         <chronontology1:Excavation_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1915</chronontology1:Excavation_Date>
@@ -3743,8 +3763,8 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
     <!-- http://www.unict.disum.it/chronontology#Nile_Delta -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Nile_Delta">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Nile_Delta"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#North_Africa"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#NileDelta"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#NorthAfrica"/>
         <chronontology1:HasWiki rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://it.wikipedia.org/wiki/Egitto_preistorico</chronontology1:HasWiki>
     </owl:NamedIndividual>
     
@@ -3753,8 +3773,8 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
     <!-- http://www.unict.disum.it/chronontology#North_Africa -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#North_Africa">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Mediterranean_North_Africa"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#North_Africa"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#MediterraneanNorthAfrica"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#NorthAfrica"/>
         <chronontology1:HasWiki rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://it.vvikipedla.com/wiki/Prehistoric_North_Africa</chronontology1:HasWiki>
     </owl:NamedIndividual>
     
@@ -3763,7 +3783,7 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
     <!-- http://www.unict.disum.it/chronontology#North_Africa_Iron_Age -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#North_Africa_Iron_Age">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Mediterranean_North_Africa"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#MediterraneanNorthAfrica"/>
         <chronontology1:isPeriodizationOf rdf:resource="http://www.unict.disum.it/chronontology#North_Africa"/>
         <chronontology1:isRelativeChronologyOf rdf:resource="http://www.unict.disum.it/chronontology#Iron_Age"/>
         <chronontology1:End_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-264</chronontology1:End_Date>
@@ -3777,7 +3797,7 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
     <!-- http://www.unict.disum.it/chronontology#North_Africa_Neolithic -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#North_Africa_Neolithic">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Mediterranean_North_Africa"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#MediterraneanNorthAfrica"/>
         <chronontology1:isPeriodizationOf rdf:resource="http://www.unict.disum.it/chronontology#North_Africa"/>
         <chronontology1:isPopulatedBy rdf:resource="http://www.unict.disum.it/chronontology#Capsian"/>
         <chronontology1:isPopulatedBy rdf:resource="http://www.unict.disum.it/chronontology#Hunter-Gatherers"/>
@@ -3793,7 +3813,7 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
     <!-- http://www.unict.disum.it/chronontology#North_Africa_Punic_Expansion -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#North_Africa_Punic_Expansion">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Mediterranean_North_Africa"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#MediterraneanNorthAfrica"/>
         <chronontology1:isPeriodizationOf rdf:resource="http://www.unict.disum.it/chronontology#North_Africa"/>
         <chronontology1:isRelativeChronologyOf rdf:resource="http://www.unict.disum.it/chronontology#Classical_Age"/>
         <chronontology1:End_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-146</chronontology1:End_Date>
@@ -3807,7 +3827,7 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
     <!-- http://www.unict.disum.it/chronontology#North_Africa_Terminal_Pleistocene -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#North_Africa_Terminal_Pleistocene">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Mediterranean_North_Africa"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#MediterraneanNorthAfrica"/>
         <chronontology1:isPeriodizationOf rdf:resource="http://www.unict.disum.it/chronontology#North_Africa"/>
         <chronontology1:isPopulatedBy rdf:resource="http://www.unict.disum.it/chronontology#Hunter-Gatherers"/>
         <chronontology1:isRelativeChronologyOf rdf:resource="http://www.unict.disum.it/chronontology#Paleolithic"/>
@@ -3822,7 +3842,7 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
     <!-- http://www.unict.disum.it/chronontology#North_Africa_Undefined -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#North_Africa_Undefined">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Mediterranean_North_Africa"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#MediterraneanNorthAfrica"/>
         <chronontology1:isPeriodizationOf rdf:resource="http://www.unict.disum.it/chronontology#North_Africa"/>
         <chronontology1:isRelativeChronologyOf rdf:resource="http://www.unict.disum.it/chronontology#Bronze_Age"/>
         <chronontology1:End_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-800</chronontology1:End_Date>
@@ -3874,8 +3894,8 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
     <!-- http://www.unict.disum.it/chronontology#Phaistos -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Phaistos">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Archeological_Evidence"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Minoan_Palaces"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#ArcheologicalEvidence"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#MinoanPalaces"/>
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Palaces"/>
         <chronontology1:isArcheologicalEvidenceOf rdf:resource="http://www.unict.disum.it/chronontology#Minoan_Settlement"/>
     </owl:NamedIndividual>
@@ -3973,8 +3993,8 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
     <!-- http://www.unict.disum.it/chronontology#Pylos -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Pylos">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Archeological_Evidence"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Mycenean_Palaces"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#ArcheologicalEvidence"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#MyceneanPalaces"/>
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Palaces"/>
         <chronontology1:isArcheologicalEvidenceOf rdf:resource="http://www.unict.disum.it/chronontology#Mycenean_Settlement"/>
         <chronontology1:Excavation_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1912</chronontology1:Excavation_Date>
@@ -4002,7 +4022,7 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
     <!-- http://www.unict.disum.it/chronontology#Sahara -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Sahara">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#North_Africa"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#NorthAfrica"/>
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Sahara"/>
         <chronontology1:Geolocation rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.google.com/maps/place/Deserto+del+Sahara/@21.9753751,13.0867956,5z/data=!3m1!4b1!4m5!3m4!1s0x13883b64fb267151:0xd6406bdc582d7390!8m2!3d23.4162027!4d25.66283</chronontology1:Geolocation>
         <chronontology1:HasWiki rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Sahara</chronontology1:HasWiki>
@@ -4082,7 +4102,7 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
     <!-- http://www.unict.disum.it/chronontology#Sahara_Neolithic_Early -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Sahara_Neolithic_Early">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Early_Neolithic"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#EarlyNeolithic"/>
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Neolithic"/>
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Sahara"/>
         <chronontology1:IsSubPeriodizationOf rdf:resource="http://www.unict.disum.it/chronontology#Sahara"/>
@@ -4099,7 +4119,7 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
     <!-- http://www.unict.disum.it/chronontology#Sahara_Neolithic_Late -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Sahara_Neolithic_Late">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Late_Neolithic"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#LateNeolithic"/>
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Neolithic"/>
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Sahara"/>
         <chronontology1:IsSubPeriodizationOf rdf:resource="http://www.unict.disum.it/chronontology#Sahara"/>
@@ -4115,7 +4135,7 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
     <!-- http://www.unict.disum.it/chronontology#Sahara_Neolithic_Middle -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Sahara_Neolithic_Middle">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Middle_Neolithic"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#MiddleNeolithic"/>
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Neolithic"/>
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Sahara"/>
         <chronontology1:IsSubPeriodizationOf rdf:resource="http://www.unict.disum.it/chronontology#Sahara"/>
@@ -4158,8 +4178,8 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
     <!-- http://www.unict.disum.it/chronontology#Saharian_desertification -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Saharian_desertification">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Climate_Changes"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Saharian_desertification"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#ClimateChanges"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#SaharianDesertification"/>
         <chronontology1:climateEventVerifiedIn rdf:resource="http://www.unict.disum.it/chronontology#Holocene"/>
         <chronontology1:climateEventVerifiedIn rdf:resource="http://www.unict.disum.it/chronontology#Oscillating_Wetter/Drier"/>
         <chronontology1:Date rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-4000</chronontology1:Date>
@@ -4227,8 +4247,8 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
     <!-- http://www.unict.disum.it/chronontology#Southern_France -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Southern_France">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Mediterranean_Europe"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Southern_France"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#MediterraneanEurope"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#SouthernFrance"/>
         <chronontology1:Geolocation rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.google.com/maps/place/Francia/@46.1313542,-2.4365078,6z/data=!3m1!4b1!4m5!3m4!1s0xd54a02933785731:0x6bfd3f96c747d9f7!8m2!3d46.227638!4d2.213749</chronontology1:Geolocation>
         <chronontology1:HasWiki rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Prehistory_of_France</chronontology1:HasWiki>
     </owl:NamedIndividual>
@@ -4238,8 +4258,8 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
     <!-- http://www.unict.disum.it/chronontology#Southern_Italy -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Southern_Italy">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Mediterranean_Europe"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Southern_Italy"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#MediterraneanEurope"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#SouthernItaly"/>
         <chronontology1:HasWiki rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://it.wikipedia.org/wiki/Italia_preistorica_e_protostorica</chronontology1:HasWiki>
     </owl:NamedIndividual>
     
@@ -4289,8 +4309,8 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
     <!-- http://www.unict.disum.it/chronontology#Tyrins -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Tyrins">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Archeological_Evidence"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Mycenean_Palaces"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#ArcheologicalEvidence"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#MyceneanPalaces"/>
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Palaces"/>
         <chronontology1:isArcheologicalEvidenceOf rdf:resource="http://www.unict.disum.it/chronontology#Mycenean_Settlement"/>
         <chronontology1:HasWiki rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Tiryns</chronontology1:HasWiki>
@@ -4312,8 +4332,8 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
     <!-- http://www.unict.disum.it/chronontology#Uneven_shift_to_drier -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Uneven_shift_to_drier">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Climate_Changes"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Uneven_shift_to_drier"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#ClimateChanges"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#UnevenShiftToDrier"/>
         <chronontology1:climateEventVerifiedIn rdf:resource="http://www.unict.disum.it/chronontology#Holocene"/>
         <chronontology1:End_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-1000</chronontology1:End_Date>
         <chronontology1:Start_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-3300</chronontology1:Start_Date>
@@ -4405,8 +4425,8 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
     <!-- http://www.unict.disum.it/chronontology#Zakros -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Zakros">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Archeological_Evidence"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Minoan_Palaces"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#ArcheologicalEvidence"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#MinoanPalaces"/>
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Palaces"/>
         <chronontology1:isArcheologicalEvidenceOf rdf:resource="http://www.unict.disum.it/chronontology#Minoan_Settlement"/>
         <chronontology1:References rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.minoancrete.com/zakros.htm</chronontology1:References>
@@ -4417,8 +4437,8 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
     <!-- http://www.unict.disum.it/chronontology#Central/North_Italy -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Central/North_Italy">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Mediterranean_Europe"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Central/North_Italy"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#CentralNorthItaly"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#MediterraneanEurope"/>
         <chronontology1:Geolocation rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.google.com/maps?q=italia&amp;rlz=1C1CHBF_itIT909IT909&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwjUsP2J4qDxAhXIGuwKHW3nAEcQ_AUoAnoECAEQBA</chronontology1:Geolocation>
         <chronontology1:HasWiki rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://it.wikipedia.org/wiki/Italia_centrale</chronontology1:HasWiki>
         <chronontology1:HasWiki rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://it.wikipedia.org/wiki/Italia_settentrionale</chronontology1:HasWiki>
@@ -4429,8 +4449,8 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
     <!-- http://www.unict.disum.it/chronontology#Oscillating_Wetter/Drier -->
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Oscillating_Wetter/Drier">
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Climate_Changes"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Oscillating_wetter_drier"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#ClimateChanges"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#OscillatingWetterDrier"/>
         <chronontology1:isClimateChangeOf rdf:resource="http://www.unict.disum.it/chronontology#Holocene"/>
         <chronontology1:End_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-3300</chronontology1:End_Date>
         <chronontology1:Start_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-5000</chronontology1:Start_Date>
@@ -4444,7 +4464,7 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
 
     <owl:NamedIndividual rdf:about="http://www.unict.disum.it/chronontology#Sardina/Corsica">
         <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Islands"/>
-        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#Sardinia/Corsica"/>
+        <rdf:type rdf:resource="http://www.unict.disum.it/chronontology#SardiniaCorsica"/>
         <chronontology1:Geolocation rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.google.com/maps/place/Corsica,+Francia/@42.1751662,7.9262514,8z/data=!3m1!4b1!4m5!3m4!1s0x12d72403b09b0971:0xa88522ec71a1cb8d!8m2!3d42.0396042!4d9.0128926</chronontology1:Geolocation>
         <chronontology1:Geolocation rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.google.com/maps?q=sardegna&amp;rlz=1C1CHBF_itIT909IT909&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=2ahUKEwjnnL3h5aDxAhUJr6QKHUsyBOcQ_AUoAXoECAEQAw</chronontology1:Geolocation>
         <chronontology1:HasWiki rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://it.wikipedia.org/wiki/Sardegna_preistorica</chronontology1:HasWiki>
@@ -4470,16 +4490,6 @@ Nella classificazione di Blytt-Sernander la cronozona associata a questo periodo
         <rdfs:label xml:lang="en">Anatolia</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://it.wikipedia.org/wiki/Storia_dell%27Anatolia</rdfs:seeAlso>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Ancient_dryas">
-        <rdfs:label>Ancient dryas</rdfs:label>
-        <rdfs:comment xml:lang="it">l Dryas antichissimo fu un periodo climatico, accaduto durante lo stadiale più freddo, dopo la glaciazione Weichselian nel Nord Europa. In particolare, nelle Alpi, il Dryas antichissimo corrisponde allo stadiale di Gschnitz.
-
-Prende il nome ad alcuni pollini della specie Dryas octopetala, rilevata nei carotaggi prelevati a scopo paleopalinologico da ghiacciai e torbiere. Il Dryas antichissimo corrisponde alla zona di polline Ia.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Aridify_event">
-        <rdfs:label>Aridify event</rdfs:label>
-        <rdfs:label xml:lang="en">Aridify event</rdfs:label>
-    </rdf:Description>
     <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Atlantic">
         <rdfs:seeAlso xml:lang="it">https://en.wikipedia.org/wiki/Atlantic_(period)</rdfs:seeAlso>
         <rdfs:comment xml:lang="it">8900-5700 a.C.</rdfs:comment>
@@ -4497,19 +4507,11 @@ Prende il nome ad alcuni pollini della specie Dryas octopetala, rilevata nei car
         <rdfs:comment xml:lang="it">Individuo generale della periodizzazione relativa. Collegato alle periodizzazioni specifiche nelle singole aree attraverso il reasoner.</rdfs:comment>
         <rdfs:seeAlso xml:lang="en">https://it.wikipedia.org/wiki/Et%C3%A0_del_bronzo</rdfs:seeAlso>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Classical_Age">
-        <rdfs:seeAlso xml:lang="it">https://it.wikipedia.org/wiki/Antichit%C3%A0_classica</rdfs:seeAlso>
-        <rdfs:label xml:lang="en">Classical age</rdfs:label>
-        <rdfs:comment xml:lang="it">Individuo generale della periodizzazione relativa. Collegato alle periodizzazioni specifiche nelle singole aree attraverso il reasoner.</rdfs:comment>
-    </rdf:Description>
     <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Copper_Age">
         <rdfs:seeAlso xml:lang="en">https://it.wikipedia.org/wiki/Et%C3%A0_del_rame</rdfs:seeAlso>
         <rdfs:comment xml:lang="it">Individuo generale della periodizzazione relativa. Collegato alle periodizzazioni specifiche nelle singole aree attraverso il reasoner.</rdfs:comment>
         <rdfs:seeAlso xml:lang="en">http://www00.unibg.it/dati/corsi/3064/29312-06-Et%c3%a0_del_rame.pdf</rdfs:seeAlso>
         <rdfs:label xml:lang="en">Copper age</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#East_Adriatic">
-        <rdfs:label xml:lang="en">East adriatic</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Egypt">
         <rdfs:comment xml:lang="it">Individuo generale dell&apos;area geografica di riferimento, collegato alle periodizzazioni relative all&apos;area attraverso il reasoner.</rdfs:comment>
@@ -4522,8 +4524,8 @@ Il limite con l&apos;epoca inferiore (il Pleistocene) è definito sulla base del
         <rdfs:comment xml:lang="it">L&apos;Olocene è l&apos;epoca geologica più recente, quella in cui ci troviamo e che ha avuto il suo inizio convenzionalmente circa 11 700 anni fa</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Iron_Age">
-        <rdfs:comment xml:lang="it">Individuo generale della periodizzazione relativa. Collegato alle periodizzazioni specifiche nelle singole aree attraverso il reasoner.</rdfs:comment>
         <rdfs:label xml:lang="en">Iron age</rdfs:label>
+        <rdfs:comment xml:lang="it">Individuo generale della periodizzazione relativa. Collegato alle periodizzazioni specifiche nelle singole aree attraverso il reasoner.</rdfs:comment>
         <rdfs:seeAlso xml:lang="en">https://it.wikipedia.org/wiki/Et%C3%A0_del_ferro</rdfs:seeAlso>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Jazira">
@@ -4539,13 +4541,6 @@ Il limite con l&apos;epoca inferiore (il Pleistocene) è definito sulla base del
     </rdf:Description>
     <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Neolithic">
         <rdfs:seeAlso xml:lang="en">https://it.wikipedia.org/wiki/Neolitico</rdfs:seeAlso>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Nile_Delta">
-        <rdfs:label xml:lang="en">Nile delta</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#North_Africa">
-        <rdfs:comment xml:lang="it">Individuo generale dell&apos;area geografica di riferimento, collegato alle periodizzazioni relative all&apos;area attraverso il reasoner.</rdfs:comment>
-        <rdfs:label xml:lang="en">North Africa</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Paleolithic">
         <rdfs:comment xml:lang="it">Individuo generale della periodizzazione relativa. Collegato alle periodizzazioni specifiche nelle singole aree attraverso il reasoner.</rdfs:comment>
@@ -4568,16 +4563,6 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
     <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Sahara">
         <rdfs:comment xml:lang="it">Individuo generale dell&apos;area geografica di riferimento, collegato alle periodizzazioni relative all&apos;area attraverso il reasoner.</rdfs:comment>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Saharian_desertification">
-        <rdfs:label>Saharian desertification</rdfs:label>
-        <rdfs:label xml:lang="en">Saharian desertification</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Southern_France">
-        <rdfs:label xml:lang="en">Southern France</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Southern_Italy">
-        <rdfs:label xml:lang="en">Southern Italy</rdfs:label>
-    </rdf:Description>
     <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#SubAtlantic">
         <rdfs:comment xml:lang="it">2600-0</rdfs:comment>
         <rdfs:seeAlso xml:lang="it">https://en.wikipedia.org/wiki/Subatlantic</rdfs:seeAlso>
@@ -4585,13 +4570,6 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
     <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#SubBoreal">
         <rdfs:seeAlso xml:lang="it">https://en.wikipedia.org/wiki/Subboreal</rdfs:seeAlso>
         <rdfs:comment xml:lang="it">5700-2600 a.C.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Uneven_shift_to_drier">
-        <rdfs:label>Uneven shift to drier</rdfs:label>
-        <rdfs:comment xml:lang="it">Periodo di passaggio climatico, caratterizzato da un clima secco e arido.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Central/North_Italy">
-        <rdfs:label xml:lang="en">Central and north Italy</rdfs:label>
     </rdf:Description>
     
 
@@ -4632,11 +4610,11 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Aridify_event"/>
-            <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Cold_event"/>
-            <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Oscillating_wetter_drier"/>
-            <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Saharian_desertification"/>
-            <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Uneven_shift_to_drier"/>
+            <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#AridifyEvent"/>
+            <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#ColdEvent"/>
+            <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#OscillatingWetterDrier"/>
+            <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#SaharianDesertification"/>
+            <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#UnevenShiftToDrier"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -4668,6 +4646,22 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#EarlyMesolithic"/>
+            <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#LateMesolithic"/>
+            <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#MiddleMesolithic"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#EarlyNeolithic"/>
+            <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#LateNeolithic"/>
+            <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#MiddleNeolithic"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Early_Bronze_Age"/>
             <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Late_Bronze_Age"/>
             <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Middle_Bronze_Age"/>
@@ -4679,22 +4673,6 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
             <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Early_Iron_Age"/>
             <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Late_Iron_Age"/>
             <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Middle_Iron_Age"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Early_Mesolithic"/>
-            <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Late_Mesolithic"/>
-            <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Middle_Mesolithic"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Early_Neolithic"/>
-            <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Late_Neolithic"/>
-            <rdf:Description rdf:about="http://www.unict.disum.it/chronontology#Middle_Neolithic"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -4813,21 +4791,9 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
-                                <swrl:arguments>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:resource="urn:swrl:var#y"/>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-10500</rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </swrl:arguments>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#ClimateChanges"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -4835,9 +4801,21 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Climate_Changes"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#y"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-10500</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -4904,7 +4882,7 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Climate_Changes"/>
+                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#ClimateChanges"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                             </rdf:Description>
                         </rdf:first>
@@ -4993,21 +4971,9 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
-                                <swrl:arguments>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:resource="urn:swrl:var#y"/>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-11500</rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </swrl:arguments>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#ClimateChanges"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -5015,9 +4981,21 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Climate_Changes"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#y"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-11500</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -5084,7 +5062,7 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Climate_Changes"/>
+                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#ClimateChanges"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                             </rdf:Description>
                         </rdf:first>
@@ -5195,21 +5173,9 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
-                                        <swrl:arguments>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:resource="urn:swrl:var#y"/>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-5700</rdf:first>
-                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </swrl:arguments>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#ClimateChanges"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -5217,9 +5183,21 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Climate_Changes"/>
-                                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="urn:swrl:var#y"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-5700</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -5263,21 +5241,9 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
-                                <swrl:arguments>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:resource="urn:swrl:var#y"/>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-8900</rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </swrl:arguments>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#ClimateChanges"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -5285,9 +5251,21 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Climate_Changes"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#y"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-8900</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -5376,7 +5354,7 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
+                                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
                                         <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -5443,21 +5421,9 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
-                                <swrl:arguments>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:resource="urn:swrl:var#y"/>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-10500</rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </swrl:arguments>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -5465,9 +5431,21 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#y"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-10500</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -5534,7 +5512,7 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
+                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                             </rdf:Description>
                         </rdf:first>
@@ -5645,21 +5623,9 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
-                                        <swrl:arguments>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:resource="urn:swrl:var#y"/>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-332</rdf:first>
-                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </swrl:arguments>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -5667,9 +5633,21 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
-                                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="urn:swrl:var#y"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-332</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -5736,7 +5714,7 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
+                                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
                                         <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -5826,7 +5804,7 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
+                                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
                                         <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -5894,7 +5872,7 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
+                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                             </rdf:Description>
                         </rdf:first>
@@ -5960,7 +5938,7 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
+                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                             </rdf:Description>
                         </rdf:first>
@@ -6023,7 +6001,7 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Classical_Age"/>
+                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#ClassicalAge"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                     </rdf:Description>
                 </rdf:first>
@@ -6072,7 +6050,7 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
+                                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
                                         <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -6184,7 +6162,7 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
+                                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
                                                 <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                                             </rdf:Description>
                                         </rdf:first>
@@ -6251,21 +6229,9 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
-                                        <swrl:arguments>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:resource="urn:swrl:var#y"/>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-5700</rdf:first>
-                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </swrl:arguments>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -6273,9 +6239,21 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
-                                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="urn:swrl:var#y"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-5700</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -6364,7 +6342,7 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
+                                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
                                                 <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                                             </rdf:Description>
                                         </rdf:first>
@@ -6409,21 +6387,9 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
-                                <swrl:arguments>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:resource="urn:swrl:var#y"/>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-8900</rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </swrl:arguments>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -6431,9 +6397,21 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#y"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-8900</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -6511,7 +6489,7 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
+                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                             </rdf:Description>
                         </rdf:first>
@@ -6578,21 +6556,9 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
-                        <swrl:arguments>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                <rdf:first rdf:resource="urn:swrl:var#y"/>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-10500</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </swrl:arguments>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -6600,9 +6566,21 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
-                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="urn:swrl:var#y"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-10500</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -6669,7 +6647,7 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
+                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                     </rdf:Description>
                 </rdf:first>
@@ -6780,21 +6758,9 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
-                                <swrl:arguments>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:resource="urn:swrl:var#y"/>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-332</rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </swrl:arguments>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -6802,9 +6768,21 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#y"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-332</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -6848,21 +6826,9 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
-                        <swrl:arguments>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                <rdf:first rdf:resource="urn:swrl:var#y"/>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-11500</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </swrl:arguments>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -6870,9 +6836,21 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
-                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="urn:swrl:var#y"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-11500</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -6961,7 +6939,7 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
+                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                             </rdf:Description>
                         </rdf:first>
@@ -7029,7 +7007,7 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
+                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                     </rdf:Description>
                 </rdf:first>
@@ -7095,7 +7073,7 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
+                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                     </rdf:Description>
                 </rdf:first>
@@ -7169,7 +7147,7 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Classical_Age"/>
+                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#ClassicalAge"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                     </rdf:Description>
                 </rdf:first>
@@ -7207,7 +7185,7 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
+                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                             </rdf:Description>
                         </rdf:first>
@@ -7319,7 +7297,7 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
+                                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
                                         <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -7386,21 +7364,9 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
-                                <swrl:arguments>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:resource="urn:swrl:var#y"/>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-5700</rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </swrl:arguments>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -7408,9 +7374,21 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#y"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-5700</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -7499,7 +7477,7 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
+                                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
                                         <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -7544,21 +7522,9 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
-                        <swrl:arguments>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                <rdf:first rdf:resource="urn:swrl:var#y"/>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-8900</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </swrl:arguments>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#RelativeChronology"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -7566,9 +7532,21 @@ Il Pleistocene inferiore e medio corrispondono al periodo del Paleolitico inferi
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.unict.disum.it/chronontology#Relative_Chronology"/>
-                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="urn:swrl:var#y"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-8900</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
